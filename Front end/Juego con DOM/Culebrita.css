@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#juego {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    gap: 1px;
+    background-color: transparent;
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.celda {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.serpiente {
+    background-color: #FF69B4;
+    border-radius: 50%;
+    transition: background-color 0.1s;
+}
+
+.comida {
+    background-color: #800080;
+    border-radius: 50%;
+}
+
+#controles {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
